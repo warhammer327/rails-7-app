@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Bundle and process CSS [https://github.com/rails/cssbundling-rails]
 gem "cssbundling-rails"
 
+#Bundle simple form
+gem "simple_form", "~> 5.1.0"
+
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
@@ -46,7 +49,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 # Use Sass to process CSS
-# gem "sassc-rails"
+gem "sassc-rails"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
