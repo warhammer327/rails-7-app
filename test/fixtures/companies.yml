@@ -1,0 +1,18 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+#first:
+#  company: kpmg
+#  name: First quote
+#
+#second:
+#  company: kpmg
+#  name: Second quote
+#
+#third:
+#  company: kpmg
+#  name: Third quote
+
+kpmg:
+  name: KPMG
+
+pwc:
+  name: PwC
