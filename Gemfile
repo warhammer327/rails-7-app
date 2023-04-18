@@ -57,15 +57,15 @@ gem "sassc-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
-gem "capistrano"
+gem 'capistrano'
 
-gem "capistrano-rails"
+gem 'capistrano-rails'
 
-gem "capistrano-bundler"
+gem 'capistrano-bundler'
 
-gem "capistrano-rbenv"
+gem 'capistrano-rbenv'
 
-gem "capistrano3-puma"
+gem 'capistrano3-puma'
 
 
 
