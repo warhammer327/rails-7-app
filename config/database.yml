@@ -20,8 +20,8 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: ubuntu
-  password: 12345678
+  #username: postgres
+  #password: 12345678
 
 development:
   <<: *default
@@ -31,9 +31,9 @@ development:
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  username: ubuntu
+  username: postgres
   # The password associated with the postgres role (username).
-  password: 12345678
+  #password: 12345678
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -82,7 +82,8 @@ test:
 #
 production:
   <<: *default
-  database: ubuntu
-  username: ubuntu
-  password: 12345678 
+  database: postgres
+  username: postgres
+  advisory_locks: false
+  #password: 12345678 
   #password: <%= ENV["APP_DATABASE_PASSWORD"] %>
