@@ -1,5 +1,5 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.17.2"
+lock "~> 3.16.0"
 
 set :application, "rails-7-app"
 set :repo_url, "git@github.com:warhammer327/rails-7-app.git"
