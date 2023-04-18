@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: app_production
-  username: app
+  username: ubuntu
   password: <%= ENV["APP_DATABASE_PASSWORD"] %>
