@@ -83,4 +83,5 @@ production:
   <<: *default
   database: app_production
   username: ubuntu
-  password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+  password: postgres 
+  #password: <%= ENV["APP_DATABASE_PASSWORD"] %>
