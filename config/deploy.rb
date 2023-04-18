@@ -2,7 +2,7 @@
 lock "~> 3.16.0"
 
 set :application, "rails-7-app"
-set :repo_url, "git@github.com:warhammer327/rails-7-app.git"
+set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 
 set :deploy_to, '/home/ubuntu/rails-7-app'
 
