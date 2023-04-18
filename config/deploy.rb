@@ -7,7 +7,7 @@ set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 set :deploy_to, '/home/ubuntu/rails-7-app'
 
 set :use_sudo, true
-set :branch, 'master'
+set :branch, 'main'
 
 set :linked_files, %w{config/master.key config/database.yml}
 set :rails_env, 'production'
