@@ -39,7 +39,7 @@ pidfile ENV.fetch("PIDFILE") { "tmp/pids/server.pid" }
 #
 # preload_app!
 
-application_path = '/home/ubuntu/rails-7-app/shared'
+application_path = '/home/ubuntu/rails-7-app/shared/tmp'
 
 bind "unix://#{application_path}/sockets/puma.socket"
 
