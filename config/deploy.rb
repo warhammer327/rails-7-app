@@ -4,7 +4,7 @@ lock "~> 3.16.0"
 set :application, "rails-7-app"
 set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 
-set :deploy_to, '/home/ubuntu/rails-7-app'
+set :deploy_to, '/var/www/rails-7-app'
 
 set :use_sudo, true
 set :branch, 'main'
