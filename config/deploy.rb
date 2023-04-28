@@ -40,7 +40,6 @@ end
 before :start, :make_dirs
 end
 
-after :deploy, 'greetings:hello'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
