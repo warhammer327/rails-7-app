@@ -57,15 +57,7 @@ gem "sassc-rails"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '>= 3.2'
 
-gem 'capistrano', '~> 3.16.0'
 
-gem 'capistrano-rails'
-
-gem 'capistrano-bundler'
-
-gem 'capistrano-rbenv'
-
-gem 'capistrano3-puma'
 
 
 
@@ -80,7 +72,15 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+  gem "capistrano", "~> 3.16.0"
 
+  gem "capistrano-rails"
+
+  gem "capistrano-bundler"
+
+  gem "capistrano-rbenv"
+
+  gem "capistrano3-puma"
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 

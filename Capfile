@@ -35,6 +35,7 @@ install_plugin Capistrano::SCM::Git
  require "capistrano/puma"
  install_plugin Capistrano::Puma 
  install_plugin Capistrano::Puma::Systemd
+ install_plugin Capistrano::Puma::Daemon
 #require "capistrano/passenger"
 
 
