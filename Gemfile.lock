@@ -285,7 +285,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap
   bootstrap-sass (~> 3.3.6)
-  capistrano (~> 3.16.0)
+  capistrano
   capistrano-bundler
   capistrano-rails
   capistrano-rbenv
@@ -297,7 +297,7 @@ DEPENDENCIES
   jbuilder
   jsbundling-rails
   pg (~> 1.1)
-  puma (~> 5.0)
+  puma
   rails (~> 7.0.4, >= 7.0.4.3)
   redis (~> 4.0)
   sass-rails (>= 3.2)

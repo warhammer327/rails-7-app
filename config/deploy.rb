@@ -1,12 +1,13 @@
 # config valid for current version and patch releases of Capistrano
-lock "~> 3.16.0"
+#lock "~> 3.16.0"
+server '3.228.15.175', port: 22, roles: [:web, :app, :db], primary: true
 
 set :application, "rails-7-app"
 set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 
-set :deploy_to, '/home/ubuntu/rails-7-app'
+set :deploy_to, '/var/www/rails-7-app'
 
-set :use_sudo, true
+set :use_sudo, false
 set :branch, 'main'
 
 set :linked_files, %w{config/master.key config/database.yml}
