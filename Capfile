@@ -26,15 +26,16 @@ install_plugin Capistrano::SCM::Git
 #   https://github.com/capistrano/rails
 #   https://github.com/capistrano/passenger
 #
+require 'capistrano/ssh_doctor'
 # require "capistrano/rvm"
- require "capistrano/rbenv"
- require "capistrano/rails"
+require "capistrano/rbenv"
+require "capistrano/rails"
 # require "capistrano/chruby"
- require "capistrano/bundler"
- require "capistrano/rails/assets"
- require "capistrano/rails/migrations"
- require "capistrano/puma"
- install_plugin Capistrano::Puma 
+require "capistrano/bundler"
+require "capistrano/rails/assets"
+require "capistrano/rails/migrations"
+require "capistrano/puma"
+install_plugin Capistrano::Puma 
 #install_plugin Capistrano::Puma::Daemon
 install_plugin Capistrano::Puma::Systemd
 #require "capistrano/passenger"

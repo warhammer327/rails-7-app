@@ -3,7 +3,7 @@
 #server '3.228.15.175', port: 22, roles: [:web, :app, :db], primary: true
 
 set :application, "rails-7-app"
-set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
+set :repo_url, "git@github.com/warhammer327/rails-7-app.git"
 
 set :deploy_to, '/var/www/rails-7-app'
 
