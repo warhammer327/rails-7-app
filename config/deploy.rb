@@ -7,7 +7,7 @@ set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 
 set :deploy_to, '/var/www/rails-7-app'
 
-set :user, "ubuntu"
+set :user, fetch(:user)
 
 set :use_sudo, true
 set :branch, 'main'
@@ -18,10 +18,9 @@ set :keep_releases, 2
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 set :linked_files, %w{config/database.yml config/master.key}
 
-#set :default_env, {
-#    PATH: '$HOME/.nvm/versions/node/v14.15.1/bin/:$PATH',
-#    NODE_ENVIRONMENT: 'production'
-#}
+set :puma_env, fetch(:rack_env, fetch(:rails_env, 'production'))
+set :puma_threads, [0, 16]
+set :puma_workers, 0
 
 set :puma_bind,       "unix://#{shared_path}/tmp/sockets/#{fetch(:application)}-puma.sock"
 set :puma_state,      "#{shared_path}/tmp/pids/puma.state"

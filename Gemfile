@@ -73,11 +73,11 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
   
-  gem 'capistrano',         require: false
-  gem 'capistrano-rbenv',   require: false
-  gem 'capistrano-rails',   require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano3-puma',   require: false
+  gem 'capistrano'         
+  gem 'capistrano-rbenv'   
+  gem 'capistrano-rails'   
+  gem 'capistrano-bundler' 
+  gem 'capistrano3-puma'   
   gem 'capistrano-ssh-doctor', git: 'https://github.com/capistrano-plugins/capistrano-ssh-doctor.git'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
