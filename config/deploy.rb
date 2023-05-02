@@ -7,6 +7,8 @@ set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 
 set :deploy_to, '/var/www/rails-7-app'
 
+set :user, "ubuntu"
+
 set :use_sudo, true
 set :branch, 'main'
 
