@@ -305,6 +305,7 @@ DEPENDENCIES
   selenium-webdriver
   simple_form (~> 5.1.0)
   sprockets-rails
+  sshkit
   stimulus-rails
   turbo-rails (~> 1.0)
   tzinfo-data
