@@ -35,14 +35,14 @@ set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
 namespace :puma do
-    desc 'Create Directories for Puma Pids and Socket'
-    task :make_dirs do
-        on roles(:app) do
-            execute "mkdir #{shared_path}/tmp/sockets -p"
-            execute "mkdir #{shared_path}/tmp/pids -p"
-        end
+  desc 'Create Directories for Puma Pids and Socket'
+  task :make_dirs do
+    execute "mkdir #{shared_path}/tmp/sockets -p"
+    on roles(:app) do   
+      execute "mkdir #{shared_path}/tmp/pids -p"
     end
-    before :start, :make_dirs
+  end
+  before :start, :make_dirs
 end
 
 
