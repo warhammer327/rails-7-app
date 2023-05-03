@@ -37,8 +37,8 @@ set :puma_init_active_record, true  # Change to false when not using ActiveRecor
 namespace :puma do
   desc 'Create Directories for Puma Pids and Socket'
   task :make_dirs do
-    execute "mkdir #{shared_path}/tmp/sockets -p"
-    on roles(:app) do   
+    on roles(:app) do
+      execute "mkdir #{shared_path}/tmp/sockets -p"
       execute "mkdir #{shared_path}/tmp/pids -p"
     end
   end
