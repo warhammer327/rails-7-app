@@ -59,10 +59,9 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
-
-server '3.228.15.175', user: 'ubuntu', roles: %w{web app db}
+server '44.202.225.119', user: 'ubuntu', roles: %w{web app db}
 set :ssh_options, {
 forward_agent: true,
 auth_methods: %w[publickey],
-keys: %w[/home/nascenia/server-keys/test-rizwan.pem]
+keys: %w[/home/rizwan/Downloads/test-rizwan.pem]
 }

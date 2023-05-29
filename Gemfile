@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.2.1"
+ruby "3.0.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.4", ">= 7.0.4.3"
@@ -77,8 +77,8 @@ group :development do
   gem 'capistrano-rbenv'   
   gem 'capistrano-rails'   
   gem 'capistrano-bundler' 
-  gem 'capistrano3-puma'   
-  gem 'capistrano-ssh-doctor', git: 'https://github.com/capistrano-plugins/capistrano-ssh-doctor.git'
+  gem "capistrano3-puma"
+  gem 'capistrano-ssh-doctor'#, git: 'https://github.com/capistrano-plugins/capistrano-ssh-doctor.git'
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
 
