@@ -6,7 +6,7 @@ set :repo_url, "https://github.com/warhammer327/rails-7-app.git"
 
 set :deploy_to, '/var/www/ruby-encoder'
 set :use_sudo, true
-set :branch, 'ruby_encoder'
+set :branch, 'main'
 
 set :linked_files, %w{config/master.key config/database.yml}
 set :rails_env, 'production'
