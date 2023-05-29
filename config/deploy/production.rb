@@ -64,5 +64,5 @@ server '44.202.225.119', user: 'ubuntu', roles: %w{web app db}
 set :ssh_options, {
 forward_agent: true,
 auth_methods: %w[publickey],
-keys: %w[/home/nascenia/Downloads/test-rizwan.pem]
+keys: %w[/home/rizwan/Downloads/test-rizwan.pem]
 }
