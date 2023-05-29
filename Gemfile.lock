@@ -124,6 +124,7 @@ GEM
     erubi (1.12.0)
     execjs (2.8.1)
     ffi (1.15.5)
+    ffi (1.15.5-x64-unknown)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.13.0)
@@ -316,7 +317,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.2.1p31
+   ruby 3.0.0p0
 
 BUNDLED WITH
-   2.4.9
+   2.4.13
